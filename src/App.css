@@ -1,42 +1,176 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Brand Colors */
+
+:root {
+  --green-dark: #1F4D45;
+  --green-light: #4BA880;
+  --blue-dark: #2E2D4B;
+  --blue-light: #B3D1DC;
+  --orange: #F76C5E;
+  --yellow: #FAD74B;
+  --purple: #E9D7FF;
+  --white: #ffffff;
+}
+
+/* Navigation */
+
+nav {
+  background-color: var(--green-dark);
+  height: 75px;
+  align-content: center;
+}
+
+.nav-link {
+  color: var(--white);
+}
+
+.nav-link:hover {
+  color: var(--green-light);
+}
+
+.nav-link.active {
+  color: var(--purple);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+
+.hero {
+  width: 100vw;
+  height: 66vh;
+  background-image: url('/hero-home.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: var(--white);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1.5rem 2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border-radius: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Typography */
+
+h1 {
+  font-size: 100px;
+  color: var(--green-dark);
+  text-shadow: 2px 2px var(--white);
 }
 
-.card {
-  padding: 2em;
+h2 {
+  font-size: 50px;
+  color: var(--blue-dark);
 }
 
-.read-the-docs {
-  color: #888;
+/* Labels and Buttons */
+
+.form-label {
+  color: var(--white);
+}
+
+.btn {
+  background-color: var(--orange);
+  border: none;
+  padding: 10px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--purple);
+}
+
+.btn:active {
+  background-color: var(--green-light);
+}
+
+/* Section with color background */
+
+.section-background {
+  background-color: var(--green-dark);
+  color: var(--white);
+}
+
+.section-background h2 {
+  color: var(--white);
+ }
+
+ /* Footer */
+
+.footer {
+  text-align: center;
+}
+
+/* Cards - Add flexbox styling to cards to be same height regardless of lines of text*/
+.store-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.store-image {
+  height: 200px;
+  object-fit: contain;
+  width: 100%;
+  padding: 1rem;
+  transition: transform 0.3s ease; /*learned how to zoom on image*/
+}
+
+.store-image:hover { /*learned how to zoom on image*/
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+.store-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.store-card .card-price {
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Forms - Override bootstrap */
+.form-control:focus {
+  border-color: var(--yellow);
+  box-shadow: none;
+}
+
+.form-select:focus {
+  border-color: var(--yellow);
+  box-shadow: none;
+}
+
+.form-select:hover {
+  border-color: var(--yellow);
+}
+
+.form-check-input:checked {
+  background-color: var(--yellow);
+  border-color: var(--white);
+  box-shadow: none;
+}
+
+.text-success {
+  color: var(--blue-light) !important;
+  font-size: x-large;
 }

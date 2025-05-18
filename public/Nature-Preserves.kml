@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Nature Preserves</name>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Barrier Dunes Sanctuary 6897 Ferry St</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.3568333,43.4159188,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Anderson Woods Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.3392424,43.3305868,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Brower Lake Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.4792782,43.1282392,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bradford Dickinson White</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.3596884,42.903877,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cascade Peace Park Trailhead</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.446563,42.9273586,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Castle Park Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2002403,42.7240552,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DePersia South Highlands Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2337887,43.0314292,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dumaw Woodland Nature Preserve Entrance</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.3833845,43.8012939,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dune Harbor Park Muskegon County</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.303416,43.1972705,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dune Pines Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.1989019,42.7513383,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Flower Creek Dunes Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.4578885,43.4650013,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huyser Farm Park</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.1758566,42.723852,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kuker-van Til Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.1914588,42.7987109,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lake Breeze Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.4616268,43.741439,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lamberton Lake Fen Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.6271156,43.0182223,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lost Lake Trail</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.3383627,43.2509835,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Maas Family Nature Preserve Trail</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.5643164,43.1548369,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>McDuffee Creek Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.7515218,43.7607325,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meinert County Park 8390 Meinert Park Rd</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.4514352,43.4601373,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Minnie Skwarek Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.1616291,43.0593276,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Muskegon River - Henning County Park</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.7900469,43.4210125,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Muskegon River: Thornapple Access 3550 Timberview Dr</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.7152028,43.4140974,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>North Ottawa Dunes</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2394598,43.086166,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ottawa Sands County Park</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2423804,43.0837791,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Palomita Reserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2158038,42.9629796,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pere Marquette Conservation Park</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.4431,43.9312,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pere Marquette River: Bowman Bridge River Access</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.9422222,43.8883333,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pere Marquette River: Forks Landing Access 9225</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.8409498,43.8528487,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pere Marquette River: Mapleleaf Taylor Road</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.0789319,43.908697,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pere Marquette River: Rainbow Rapids</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.975877,43.922415,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pere Marquette River - Walhalla 1187 S Walhalla Rd</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.1149823,43.9334626,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Richmond Woods Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.7989125,43.6969666,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Roselle Park</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.5368363,42.9814479,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Saugatuck Dunes State Park</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.1958273,42.7004297,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Saugatuck Harbor Natural Area</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2111055,42.6717934,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Saul Lake Bog Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.4122637,43.0658649,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tallmadge Woods Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2019396,42.6694922,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Highlands</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.7326606,42.9911205,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Upper Macatawa Natural Area</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.9892591,42.7922504,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Upriver Nature Preserve</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.767094,43.7952482,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wege Foundation Natural Area</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -85.373631,42.9624918,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Whitey's Woods: Lake Harbor Park 4635 Lake Harbor Rd]]></name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -86.2916313,43.1679263,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
