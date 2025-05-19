@@ -1,3 +1,5 @@
+//This component uses full CRUD logic, tied to MockAPI
+//
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Layout from "./Layout";
@@ -79,7 +81,7 @@ function Journal() {
           <h2 className="mb-4 text-center">Recent Stories from Our Community</h2>
           <Row>
             {/* Left column - bootstrap cards to house journal entries */}
-            <Col md={7}>
+            <Col md={6}>
               {loading ? <p>Loading journal entries...</p> : (
                 journalEntries.map(entry => (
                 <Card className="mb-4" key={entry.id}>
@@ -93,14 +95,17 @@ function Journal() {
                     <Card.Text style={{ overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }}>
                       {entry.content}
                     </Card.Text>
-                    <Button className="btn me-2" onClick={() => setActiveJournal(entry)}>
+                    <Button className="btn btn-secondary me-2" onClick={() => {
+                      setActiveJournal(entry);
+                      setJournalToEdit(undefined);//clear the edit state
+                    }}>
                       Read More
                     </Button>
-                    <Button className="btn me-2" onClick={() => setJournalToEdit(entry)}>
+                    <Button className="btn btn-secondary me-2" onClick={() => setJournalToEdit(entry)}>
                       Edit
                     </Button>
                     <Button 
-                        className="btn"
+                        className="btn btn-secondary "
                         onClick={() => handleDelete(entry.id)}
                     >
                         Delete
@@ -114,8 +119,8 @@ function Journal() {
 
             {/* Right column - a form that will be used to add, edit, or update an entry 
             as well as a block to display the "current" chosen entry*/}
-            <Col md={5}>
-              {activeJournal && (
+            <Col md={6}>
+              {activeJournal && !journalToEdit && ( //close when user wants to edit
                 <Card className="mb-4">
                   <Card.Img variant="top" src={activeJournal.imageUrl} />
                   <Card.Body>

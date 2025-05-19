@@ -1,3 +1,6 @@
+//The entry point, using React bootstrap inclusing a component to handle errors.
+//All pages are imported and routed through here.
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -20,7 +23,7 @@ import App from './App';
 const router = createBrowserRouter([
   { path: "/",
     element: <App />,
-    errorElement: <NotFound />, //Add global error handling
+    errorElement: <NotFound />, //Add global error handling with a separate component
     children: [
       { path: "/", element: <Home /> },
       { path: "contact", element: <Contact />},

@@ -1,3 +1,8 @@
+//Layout component was created to to include a hero image and title for 
+//consistency across pages
+//Contains 4 CTAs using Boostrap cards/grid system to go to other pages
+//Link didn't work so learned LinkContainer
+
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'; //Link gave an error
 import Layout from './Layout';
@@ -25,7 +30,7 @@ function Home() {
                         </Card.Text>
                         <div className="mt-auto">
                         <LinkContainer to="/explore">
-                            <Button className="btn">Explore Preserves</Button>
+                            <Button className="btn btn-secondary">Explore Preserves</Button>
                         </LinkContainer>
                         </div>
                     </Card.Body>
@@ -41,7 +46,7 @@ function Home() {
                         </Card.Text>
                         <div className="mt-auto">
                         <LinkContainer to="/journal">
-                            <Button className="btn">Visit Journal</Button>
+                            <Button className="btn btn-secondary">Visit Journal</Button>
                         </LinkContainer>
                         </div>
                     </Card.Body>
@@ -57,7 +62,7 @@ function Home() {
                         </Card.Text>
                         <div className="mt-auto">
                         <LinkContainer to="/store">
-                            <Button className="btn">Shop Merch</Button>
+                            <Button className="btn btn-secondary">Shop Merch</Button>
                         </LinkContainer>
                         </div>
                     </Card.Body>
@@ -73,7 +78,7 @@ function Home() {
                         </Card.Text>
                         <div className="mt-auto">
                         <LinkContainer to="/contact">
-                            <Button className="btn">Contact Us</Button>
+                            <Button className="btn btn-secondary">Contact Us</Button>
                         </LinkContainer>
                         </div>
                     </Card.Body>

@@ -1,3 +1,8 @@
+//store data is fetched from MockAPI 
+//Learned the Router v6 useOutletConext to call addToCart
+//Bootstrap cards are used to display products
+//Use OnClick navigate to go to cart/checkout 
+
 import { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Layout from './Layout';
@@ -27,7 +32,7 @@ function Store() {
                     <h2 className="mb-4 text-center">Shop to Support Preservation</h2>
                     <Row className="mb-4 justify-content-center">
                         <Col xs="auto">
-                            <Button onClick={() => navigate('/cart')}>Go to Cart Checkout</Button>
+                            <Button className="btn-secondary" onClick={() => navigate('/cart')}>Go to Cart Checkout</Button>
                         </Col>
                     </Row>
                     <Row>
@@ -43,7 +48,7 @@ function Store() {
                                         <Card.Title>{item.name}</Card.Title>
                                         <Card.Text>{item.description}</Card.Text>
                                         <div className="card-price">${item.price.toFixed(2)}</div> {/*Change to div align prices*/}
-                                        <Button onClick={() => addToCart(item)}>Add to Cart</Button>
+                                        <Button className="btn-secondary" onClick={() => addToCart(item)}>Add to Cart</Button>
                                     </Card.Body>
                                 </Card>
                             </Col>

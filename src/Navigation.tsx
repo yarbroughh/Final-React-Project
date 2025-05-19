@@ -1,3 +1,6 @@
+//Component for a navigation bar using React Router,
+//including passing a prop to count the number of items in a cart
+
 import { NavLink } from 'react-router-dom'
 import type { NavigationProps } from './types';
 

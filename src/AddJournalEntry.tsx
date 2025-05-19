@@ -1,9 +1,13 @@
+//Create a function to add and update journal entries
+//Populated the preserve dropdown with useEffect since the info was already available
+//Form is reset after submission
+
 import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import type { JournalEntry } from "./types";
 import type { SetJournalToEdit } from "./types";
 
-
+//pass props for adding and editing, leaving out ID so that MockAPI creates ones
 type Props = {
   onAdd: (newJournal: Omit<JournalEntry, "id">) => void;
   onEdit: (updatedJournal: JournalEntry) => void;
@@ -182,7 +186,7 @@ function AddJournal({ onAdd, onEdit, journalToEdit, setJournalToEdit }: Props) {
                 Cancel Edit
               </button>
               )}
-               <button type="submit" className="btn w-100">Submit</button>
+               <button type="submit" className="btn btn-secondary w-100">Submit</button>
           </div>
       </form>
       </Card>

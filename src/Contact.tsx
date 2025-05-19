@@ -1,3 +1,8 @@
+//Full contact form with inputs via useState and submits data to MockAPI
+//Uses Bootstrap classes
+//Learned "selectedState" to resolve JSX issue
+//Confirmation message is displayed and form is reset after submission
+
 import { useState } from 'react';
 import Layout from './Layout';
 
@@ -17,7 +22,7 @@ function Contact() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-    try {
+    try { //error handling
         const response = await fetch('https://681e7312c1c291fa66341abc.mockapi.io/API/Nature/contact', {
             method: 'POST',
             headers: {
@@ -56,7 +61,7 @@ return (
         <p>Please submit the form below and we'll respond as soon as possible.</p>
       </section>
       <form onSubmit={handleSubmit} className="container pb-5">
-      {/*from bootstrap, edited the fields to include*/}
+      {/*from bootstrap, edited the fields to include all my fields*/}
         <div className="row">
           <div className="col-md-6">
             <label htmlFor="inputFirstName" className="form-label">First Name</label>

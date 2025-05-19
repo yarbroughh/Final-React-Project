@@ -1,13 +1,12 @@
+//Fetches preserve locations from MockAPI withe useEffect and useState
+//Embedded a Google map with iframe to show where locations are
+//Bootstrap cards used for displaying locations
+//Locations link to external URLs for each preserve
+
 import { useEffect, useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Layout from './Layout';
-
-type Preserve = {
-  id: string;
-  name: string;
-  url: string;
-  image: string;
-};
+import type { Preserve } from './types';
 
 export default function Explore() {
   const [preserves, setPreserves] = useState<Preserve[]>([]);

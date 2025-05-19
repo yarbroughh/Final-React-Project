@@ -1,5 +1,8 @@
 //Created a simple cart/order page with "old school" processing to just submit
 //order information since I can't process a payment
+//Displays all items in cart and collects user info
+//Order is submitted to the MockAPI where it can be 'exported' for 'processing'
+//Cart is reset and a thank you message is displayed
 
 import { useOutletContext } from 'react-router-dom';
 import { useState } from 'react';
@@ -22,7 +25,7 @@ function Cart() {
         address: '',
     });
 
-    const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+    const total = cartItems.reduce((sum, item) => sum + item.price, 0); //add up the prices
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();

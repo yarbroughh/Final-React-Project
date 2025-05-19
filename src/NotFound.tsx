@@ -1,3 +1,6 @@
+//Component for error page, wrapped in Layout so it's consistent with the rest of the site
+//Uses bootstrap
+
 import { useRouteError } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Layout from "./Layout";

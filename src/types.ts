@@ -1,3 +1,5 @@
+//Created separate file to keep types organized
+
 import type { Dispatch } from 'react';
 
 export type StoreItem = {
@@ -16,13 +18,12 @@ export type NavigationProps = {
   cartCount: number;
 };
 
-// export type Location = {
-//   id: string;
-//   name: string;
-//   latitude: number;
-//   longitude: number;
-//   description?: string;
-// };
+export type Preserve = {
+  id: string;
+  name: string;
+  url: string;
+  image: string;
+};
 
 export type JournalEntry = {
   id: string;
@@ -35,7 +36,7 @@ export type JournalEntry = {
   isFeatured: boolean;
 }
 
-//Deinte that I'll send a new entry to MockAPI without an ID so it creates one
+//Define that I'll send a new entry to MockAPI without an ID so it creates one
 export type NewJournalEntry = Omit<JournalEntry, 'id'>;
 
 export type SetJournalToEdit = 
