@@ -29,7 +29,7 @@ function AddJournal({ onAdd, onEdit, journalToEdit, setJournalToEdit }: Props) {
     
     //add a useEffect to fetch the location options
     useEffect(() => {
-    fetch('https://681e7312c1c291fa66341abc.mockapi.io/API/Nature/locations') // Replace with your actual endpoint
+    fetch('https://681e7312c1c291fa66341abc.mockapi.io/API/Nature/locations')
       .then(res => res.json())
       .then(data => {
         const names = data.map((loc: { name: string }) => loc.name);
