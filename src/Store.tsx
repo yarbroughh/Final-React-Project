@@ -36,7 +36,7 @@ function Store() {
                         </Col>
                     </Row>
                     <Row>
-                        {storeItems.map(item => (
+                        {storeItems.map(item => ( //map to display all items
                             <Col key={item.id} md={4} className="mb-4">
                                 <Card className="store-card"> {/*add class for flex styling*/}
                                     <Card.Img
@@ -47,7 +47,7 @@ function Store() {
                                     <Card.Body>
                                         <Card.Title>{item.name}</Card.Title>
                                         <Card.Text>{item.description}</Card.Text>
-                                        <div className="card-price">${item.price.toFixed(2)}</div> {/*Change to div align prices*/}
+                                        <div className="card-price">${item.price.toFixed(2)}</div> {/*Change to div align prices and fix the decimels to 2*/}
                                         <Button className="btn-secondary" onClick={() => addToCart(item)}>Add to Cart</Button>
                                     </Card.Body>
                                 </Card>

@@ -120,7 +120,7 @@ function Cart() {
                             </Form.Group>
 
                             <div className="text-center">
-                                <Button type="submit">Submit Order</Button>
+                                <Button className="btn-secondary" type="submit">Submit Order</Button>
                             </div>
                         </Form>
                     )}
