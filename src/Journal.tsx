@@ -28,7 +28,7 @@ function Journal() {
 
   //Add a loading state
     useEffect(() => {
-    fetch("...")
+    fetch("https://681e7312c1c291fa66341abc.mockapi.io/API/Nature/journal")
         .then(res => res.json())
         .then(data => {
         setJournalEntries(data);
