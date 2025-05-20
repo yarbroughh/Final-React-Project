@@ -56,7 +56,9 @@ function Cart() {
         <Container fluid className="section-background p-5">
             <h2 className="text-center mb-4">Your Cart</h2>
 
-            {cartItems.length === 0 ? (
+            {submitted ? (
+                <p className="text-success text-center">Thank you! Your order has been submitted. </p>
+            ) : cartItems.length === 0 ? (
                 <p className="text-center">Your cart is empty.</p>
             ) : (
                 <>
@@ -76,9 +78,6 @@ function Cart() {
 
                     <h3 className="mb-4 text-center">Total: ${total.toFixed(2)}</h3>
 
-                    {submitted ? (
-                        <p className="text-success text-center">Thank you! Your order has been submitted. </p>
-                    ) : (
                         <Form onSubmit={handleSubmit}>
                             <Row className="mb-3">
                                 <Col md={6}>
@@ -123,7 +122,6 @@ function Cart() {
                                 <Button className="btn-secondary" type="submit">Submit Order</Button>
                             </div>
                         </Form>
-                    )}
                 </>
             )}
         </Container>

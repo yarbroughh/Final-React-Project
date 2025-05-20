@@ -18,7 +18,7 @@ function Journal() {
 
   // Fetch journal entries from MockAPI
   useEffect(() => {
-    fetch("https://681e7312c1c291fa66341abc.mockapi.io/API/Nature/journal") // replace with actual URL
+    fetch("https://681e7312c1c291fa66341abc.mockapi.io/API/Nature/journal") 
       .then(res => res.json())
       .then(data => setJournalEntries(data))
       .catch(err => console.error("Error fetching journal entries:", err));
